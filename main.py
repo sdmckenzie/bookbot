@@ -4,8 +4,8 @@ def main():
     book_path = "books/frankenstein.txt"
     book_content = openBook(book_path)
     word_count = getWordcount(book_content)
-    print("The total word count is:\n")
-    print(word_count)
+    print(f"--- Begin report of {book_path} ---")
+    print(f"The total word count is: {word_count}\n")
 
     characters = countCharacters(book_content)
     # print(characters)
